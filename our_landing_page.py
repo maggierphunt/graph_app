@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request
 app = Flask("Myapp") #making an app
 
+
 @app.route("/")
-def hello_someone(name):
+def hello():
         return render_template("our_landing_page.html", name=name.title())
 
 @app.route("/signup", methods=["POST"])
