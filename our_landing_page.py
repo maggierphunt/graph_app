@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request
 app = Flask("Myapp") #making an app
-
-
-@app.route("/")
+@app.route("/")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
 def hello():
         return render_template("our_landing_page.html", name=name.title())
 
