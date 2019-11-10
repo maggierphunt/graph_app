@@ -7,6 +7,24 @@ body {
 	line-height: 1.4;
 }
 
+.parent{
+	display:flex
+    align-items: center;
+}
+.child{
+	padding:50px
+}
+.one{
+	padding:50px
+	align-self: centre;
+}
+.two{
+	align-self: centre;
+}
+.three{	
+	align-self: centre;
+}
+
 /* banner CSS */
 
 .banner {
