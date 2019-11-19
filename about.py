@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 app = Flask("our_app") #making an app
 @app.route("/")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
 
-def our_landing_page():
+def main():
         return render_template("our_landing_page.html")
         import matplotlib.pyplot as plt
         year = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
@@ -12,8 +12,9 @@ def our_landing_page():
         plt.ylabel('Occurences')
         plt.title('How much has your hashtag been used?')
         plt.show()
+app.run(debug=True)
 
-@app.route("/about")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
+@app.route("/<about>")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
 
 def about():
         return render_template("about.html")
