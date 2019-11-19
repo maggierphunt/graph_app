@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400);
 
 .body2 {
-  background: rgba(29, 160, 242, 0.404); 
+  background: rgba(29, 160, 242, 0.2); 
   background-image: linear-gradient(white 2px, transparent 2px),
   linear-gradient(90deg, white 2px, transparent 2px),
   linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
@@ -14,9 +14,10 @@
 
 }
 
-.bottomtextwhite {font-size: large;
+.bottomtextwhite {font-size: extra-large;
 	text-align: center;
 	color: black;
+	padding-bottom:50px;
 }
 
 /* unvisited link */
