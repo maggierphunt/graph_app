@@ -40,7 +40,7 @@
    <p class="instructions">Make your graph here...</p>
 
    <form method="get" action="/graph_page">
-   <h2>Label your graph!</h2>
+   <h2>Label your graph</h2>
     <div class="row">
       <div class="col">
       <input type="text" id="form_title" class="form-control" placeholder="Form Title">
@@ -53,11 +53,9 @@
         <input type="text" id="y_axis" class="form-control" placeholder="Y axis label"> <div class="tooltip" role="tooltip">?
          <span class="tooltiptext">The Y axis goes up the side of the graph. Tell us, what is it you are measuring? Is it the number of chocolates eaten? Goals scored? Pounds spent?</span>
       </div> </div></div>
-
-       <h2>Enter your values!</h2> <div class="tooltip" role="tooltip">?
-          <span class="tooltiptext">By this we do not mean moral values; we mean the numbers you want to show on your graph! Please fill 12 numbers in, and order them from first to last. </span>
-            </div>
-    
+<div>
+       <h2>Enter your values</h2>
+          </div>
     <div class="row">
       <div class="col">
         <input type="number" id="value_1" class="form-control" placeholder="Value 1">
@@ -90,7 +88,9 @@
     </div>
     <div class="row">
       <div class="col">
-            <input type="number" id="value_9" class="form-control" placeholder="Value 9">
+            <input type="number" id="value_9" class="form-control" placeholder="Value 9"> <div class="tooltip" role="tooltip">?
+          <span class="tooltiptext">By this we do not mean moral values; we mean the numbers you want to show on your graph! Please fill 12 numbers in, and order them from first to last.</span>
+             </div>
         </div>
       <div class="col">
         <input type="number" id="value_10" class="form-control" placeholder="Value 10">
@@ -99,7 +99,7 @@
         <input type="number" id="value_eleven" class="form-control" placeholder="Value 11">
       </div>
       <div class="col">
-        <input type="number" id="value_12" class="form-control" placeholder="Value 12">
+        <input type="number" id="value_12" class="form-control" placeholder="Value 12"> 
       </div>
     </div>
     <div style="text-align:center;padding:50px">
@@ -167,13 +167,13 @@ if (shareButtons) {
 }
 
 })();</script>
-<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi" onclick="window.open('some.html', 'yourWindowName', 'width=200,height=150');" title="Share on Twitter">
+<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi";" title="Share on Twitter">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Twitter</span>
 </a>
 
 <!-- Medium Facebook button -->
-<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" onclick="window.open('some.html', 'yourWindowName', 'width=200,height=150');" title="Share on Facebook">
+<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq"; title="Share on Facebook">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Facebook</span>
 </a>
@@ -185,7 +185,7 @@ if (shareButtons) {
 </a>
 
 <!-- Medium More/share button -->
-<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" onclick="window.open('some.html', 'yourWindowName', 'width=200,height=150');" title="More share options">
+<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq";" title="More share options">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text-sr">More</span>
 </a>
