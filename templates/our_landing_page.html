@@ -38,66 +38,63 @@
   <div class="child two">
    <p class="instructions">Make your graph here...</p>
 
-   <form>
+   <form method="get" action="/graph_page">
    <h2>Label your graph!</h2>
     <div class="row">
       <div class="col">
-        <input type="text" class="form-control" placeholder="Form Title">
+      <input type="text" id="form_title" class="form-control" placeholder="Form Title">
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="X Axis">
+        <input type="text" id="x_axis" class="form-control" placeholder="X Axis (a measure of time e.g. days)">
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Y Axis">
-      </div>
-      <div class="col">
-          <input type="text" class="form-control" placeholder="Unit">
-        </div>   
+        <input type="text" id="y_axis" class="form-control" placeholder="Y Axis (what you are measuring)">
+      </div> 
        </div>
 
     <h2>What are your values?</h2>
     <div class="row">
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 1">
+        <input type="number" id="value_1" class="form-control" placeholder="Value 1">
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 2">
+        <input type="number" id="value_2" class="form-control" placeholder="Value 2">
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 3">
+        <input type="number" id="value_3" class="form-control" placeholder="Value 3">
       </div>
       <div class="col">
-         <input type="text" class="form-control" placeholder="Value 4">
+         <input type="number" id="value_4" class="form-control" placeholder="Value 4">
         </div>
     
     </div>
     <div class="row">
 
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 5">
+        <input type="number" id="value_5" class="form-control" placeholder="Value 5">
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 6">
+        <input type="number" id="value_6" class="form-control" placeholder="Value 6">
       </div>
       <div class="col">
-          <input type="text" class="form-control" placeholder="Value 7">
+          <input type="number" id="value_7" class="form-control" placeholder="Value 7">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Value 8">
+          <input type="number" id="value_8" class="form-control" placeholder="Value 8">
         </div>
     </div>
     <div class="row">
       <div class="col">
-            <input type="text" class="form-control" placeholder="Value 9">
+            <input type="number" id="value_9" class="form-control" placeholder="Value 9">
         </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 10">
+        <input type="number" id="value_10" class="form-control" placeholder="Value 10">
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 11">
+        <input type="number" id="value_eleven" class="form-control" placeholder="Value 11">
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Value 12">
+        <input type="number" id="value_12" class="form-control" placeholder="Value 12">
       </div>
     </div>
     <div style="text-align:center;padding:50px">
@@ -138,11 +135,9 @@
       <div style="color: aliceblue;" class="col-md-4 col-xl-3">
         <h5>Links</h5>
         <ul class="nav-list">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="https://www.codefirstgirls.org.uk/why-we-do-what-we-do.html" target="_blank">About Code First: Girls</a></li>
+          <li><a href="https://www.codefirstgirls.org.uk/blog" target="_blank">Code First: Girls Blog</a></li>
+          <li><a href="https://www.codefirstgirls.org.uk/courses-we-offer.html" target="_blank">Code First: Girls Courses</a></li>
         </ul>
       </div>
     </div>

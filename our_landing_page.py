@@ -4,18 +4,26 @@ app = Flask("our_app") #making an app
 
 def our_landing_page():
         return render_template("our_landing_page.html")
-        import matplotlib.pyplot as plt
-        year = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
-        pop_twitter_use = [44.91, 58.09, 78.07, 107.7, 138.5, 170.6, 7, 8, 9, 10, 2, 3, 4, 0]
-        plt.plot(year, pop_twitter_use, color='blue')
-        plt.xlabel('Year')
-        plt.ylabel('Occurences')
-        plt.title('How much has your hashtag been used?')
-        plt.show()
 
 @app.route("/about")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
 
 def about():
         return render_template("about.html")
+
+@app.route("/graph_page", methods=["GET"]) 
+def graph_page():
+       return render_template("graph_page.html")
+        form_data = request.form
+        import matplotlib.pyplot as plt
+        time_passing = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        graph_line = ["value_1","value_2", "value_3", "value_4", "value_5", "value_6", "value_7", "value_8", "value_9", "value_10", "value_11", "value_12"]
+        plt.plot(time_passing, graph_line, color='pink')
+        plt.xlabel("x_axis")
+        plt.ylabel("y_axis")
+        plt.title("form_title")
+        plt.show()
+        imgplot = plt.imshow(img)
+        plt.imshow(sample_image) 
+        plt.show() 
 
 app.run(debug=True) #runs the app. the debug part - unlocks debugging feature.

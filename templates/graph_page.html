@@ -27,26 +27,18 @@
 
          <div class="banner">
                     <div class="line">
-                      <span>About</span>
+                      <span>Graph</span>
+                    </div>
+                    <div class="line">
+                      <span>Generator</span>
                     </div>
           </div>
 
     </div>
   <div class="child two">
-   <p class="instructions">We designed this web app to encourage you to get comfortable interacting with graphs! Input your numbers to see them displayed.</p>
-
+   <p class="instructions">Here is your graph!</p>
   </div>
 </div>
-<p>
-
-<div class="bottomtextwhite">
-Want to know more about graphs? Have a look at these cool websites!</div>
-<div class="bottomtextwhite">
-<a href="https://www.bbc.co.uk/bitesize/topics/z2d9fcw">Bitesize statistics</a> | <a href="https://www.wolframalpha.com/examples/mathematics/">Wolfram Alpha Maths </a> | <a href="https://www.splashmath.com/math-vocabulary/geometry/graph">Splashmath: Graph</a> |
-<a href="https://www.mathscareers.org.uk/article/five-famous-female-mathematicians/">Five Famous Female Mathematicians</a> | <a href="https://cwstat.org/">Caucaus for Women in Statistics</a>
-</div>
-</div>
-</p>
 
 </body>
 
@@ -102,29 +94,31 @@ if (shareButtons) {
 
     event.preventDefault();
 
+    window.open(this.href, 'Share Dialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width='+width+',height='+height+',top='+(screen.height/2-height/2)+',left='+(screen.width/2-width/2));
+  });
 });
 }
 
 })();</script>
-<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi" onclick="window.open('some.html', 'yourWindowName', 'width=200,height=150');" title="Share on Twitter">
+<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi" title="Share on Twitter">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Twitter</span>
 </a>
 
 <!-- Medium Facebook button -->
-<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" onclick="window.open('some.html', 'yourWindowName', 'width=200,height=150');" title="Share on Facebook">
+<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share on Facebook">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Facebook</span>
 </a>
 
 <!-- Medium Email button -->
-<a class="share-btn share-btn-email" href="mailto:?subject=Graph Generator Demo&amp;body=" title="Share via Email">
+<a class="share-btn share-btn-email" href="mailto:?subject=Share Buttons Demo&amp;body=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share via Email">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Email</span>
 </a>
 
 <!-- Medium More/share button -->
-<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" onclick="window.open('some.html', 'yourWindowName', 'width=200,height=150');" title="More share options">
+<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="More share options">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text-sr">More</span>
 </a>
