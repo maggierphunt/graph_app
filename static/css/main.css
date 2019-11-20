@@ -20,6 +20,11 @@
 	padding-bottom:50px;
 }
 
+.graphplot {
+	text-align:center;
+	width:60%;
+}
+
 /* unvisited link */
 a:link {
 	color: black;
@@ -88,7 +93,7 @@ a:link {
 	text-transform: uppercase;
 	font-size: 3em;
 	line-height: 78px;
-	transform: skew(0, -15deg);
+	transform: skew(0, -10deg);
 }
 
 .banner .line:after,
