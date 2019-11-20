@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Here is your graph!</title>
+        <title>Homepage</title>
         <link rel="stylesheet" href="../static/css/main.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -35,10 +35,11 @@
           </div>
 
     </div>
-  <div class="child two">
+  <div class="child two container">
    <p class="instructions">Here is your graph!</p>
 
-   <div class="graphplot"></div><img src='my_plot.png'></div>
+   <div class="graphplot"></div><img src="data:image/png;base64, {{ plot_url }}"></div>
+
   </div>
 </div>
 
@@ -51,7 +52,7 @@
         <div class="pr-xl-4">
           <p style="color: aliceblue;">Just two women, trying to encourage children to get excited about maths and software.</p>
           <!-- Rights-->
-          <p class="rights" style="color: aliceblue;"><span>©&nbsp; </span><span class="copyright-year">2019</span><span>&nbsp;</span><span>Waves</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+          <p class="rights" style="color: aliceblue;"><span>Â©&nbsp; </span><span class="copyright-year">2019</span><span>&nbsp;</span><span>Waves</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
         </div>
       </div>
       <div class="col-md-4">
@@ -102,25 +103,25 @@ if (shareButtons) {
 }
 
 })();</script>
-<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi";" title="Share on Twitter">
+<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi" title="Share on Twitter">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Twitter</span>
 </a>
 
 <!-- Medium Facebook button -->
-<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq"; title="Share on Facebook">
+<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share on Facebook">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Facebook</span>
 </a>
 
 <!-- Medium Email button -->
-<a class="share-btn share-btn-email" href="mailto:?subject=Graph Generator Demo&amp;body=" title="Share via Email">
+<a class="share-btn share-btn-email" href="mailto:?subject=Share Buttons Demo&amp;body=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share via Email">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Email</span>
 </a>
 
 <!-- Medium More/share button -->
-<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq";" title="More share options">
+<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="More share options">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text-sr">More</span>
 </a>
