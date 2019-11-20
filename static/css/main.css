@@ -21,9 +21,11 @@
 }
 
 .graphplot {
-	text-align:center;
-	width:60%;
+	text-align: center;
+	self-align: center;
+	width:100%;
 }
+
 /*Tooltip*/
 
 .tooltip {
@@ -97,13 +99,14 @@ a:link {
 }
 .one{
 	padding:50px
-	align-self: centre;
+	align-self: center;
+	text-align: center;
 }
 .two{
-	align-self: centre;
+	text-align: center;
 }
 .three{	
-	align-self: centre;
+	align-self: center;
 }
 
 /* banner CSS */

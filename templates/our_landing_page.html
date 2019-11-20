@@ -6,6 +6,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../static/js/appscript.js"></script>
 </head>
     <body class="body2">
 
@@ -38,7 +39,7 @@
   <div class="child two">
    <p class="instructions">Make your graph here...</p>
 
-   <form method="post" action="/graph_page">
+   <form method="post" action="/graph_page" onsubmit="return validateForm()">
    <h2>Label your graph!</h2>
     <div class="row">
       <div class="col">
@@ -55,46 +56,46 @@
     <h2>What are your values?</h2>
     <div class="row">
       <div class="col">
-        <input type="value_1" id="value_1" name="value_1" class="form-control" placeholder="Value 1">
+        <input type="number" id="value_1" name="value_1" class="form-control" placeholder="Value 1">
       </div>
       <div class="col">
-        <input type="value_2" id="value_2" name="value_2" class="form-control" placeholder="Value 2">
+        <input type="number"  id="value_2" name="value_2" class="form-control" placeholder="Value 2">
       </div>
       <div class="col">
-        <input type="value_3" id="value_3" name="value_3" class="form-control" placeholder="Value 3">
+        <input type="number"  id="value_3" name="value_3" class="form-control" placeholder="Value 3">
       </div>
       <div class="col">
-         <input type="value_4" id="value_4" name="value_4" class="form-control" placeholder="Value 4">
+         <input type="number"  id="value_4" name="value_4" class="form-control" placeholder="Value 4">
         </div>
     
     </div>
     <div class="row">
 
       <div class="col">
-        <input type="value_5" id="value_5" name="value_5" class="form-control" placeholder="Value 5">
+        <input type="number"  id="value_5" name="value_5" class="form-control" placeholder="Value 5">
       </div>
       <div class="col">
-        <input type="value_6" id="value_6" name="value_6" class="form-control" placeholder="Value 6">
+        <input type=""number"  id="value_6" name="value_6" class="form-control" placeholder="Value 6">
       </div>
       <div class="col">
-          <input type="value_7" id="value_7" name="value_7" class="form-control" placeholder="Value 7">
+          <input type="number"  id="value_7" name="value_7" class="form-control" placeholder="Value 7">
         </div>
         <div class="col">
-          <input type="value_8" id="value_8" name="value_8" class="form-control" placeholder="Value 8">
+          <input type="number"  id="value_8" name="value_8" class="form-control" placeholder="Value 8">
         </div>
     </div>
     <div class="row">
       <div class="col">
-            <input type="value_9" id="value_9" name="value_9" class="form-control" placeholder="Value 9">
+            <input type="number"  id="value_9" name="value_9" class="form-control" placeholder="Value 9">
         </div>
       <div class="col">
-        <input type="value_10" id="value_10" name="value_10" class="form-control" placeholder="Value 10">
+        <input type="number" id="value_10" name="value_10" class="form-control" placeholder="Value 10">
       </div>
       <div class="col">
-        <input type="value_11" id="value_11" name="value_11" class="form-control" placeholder="Value 11">
+        <input type="number"  id="value_11" name="value_11" class="form-control" placeholder="Value 11">
       </div>
       <div class="col">
-        <input type="value_12" id="value_12" name="value_12" class="form-control" placeholder="Value 12">
+        <input type="number" id="value_12" name="value_12" class="form-control" placeholder="Value 12">
       </div>
     </div>
     <div style="text-align:center;padding:50px">

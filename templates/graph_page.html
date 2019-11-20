@@ -6,6 +6,10 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../static/js/appscript.js"></script>
+ </head>
+
+
 </head>
     <body class="body2">
 
@@ -37,10 +41,13 @@
     </div>
   <div class="child two container">
    <p class="instructions">Here is your graph!</p>
+   <div class="graphplot">   <img src="data:image/png;base64, {{ plot_url }}"></div>
+   <div class="child two container">
+   <p>Can you see how all your data points are plotted onto it? What will you plot next?</p>
+   <form method="get" action="/">
+<button type="submit" class="btn btn-primary">Plot again!</button></form>
+  </div></div>
 
-   <div class="graphplot"></div><img src="data:image/png;base64, {{ plot_url }}"></div>
-
-  </div>
 </div>
 
 </body>
