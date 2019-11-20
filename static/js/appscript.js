@@ -75,4 +75,4 @@ function validateForm() {
         if (x == "") {
             alert("Please provide 12 values.");
             return false;}
-        
+    return true;}
