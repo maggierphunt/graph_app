@@ -6,7 +6,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="bootstrap/js/bootstrap-tooltip.js"></script>
 </head>
     <body class="body2">
 
@@ -39,71 +38,67 @@
   <div class="child two">
    <p class="instructions">Make your graph here...</p>
 
-   <form method="get" action="/graph_page">
-   <h2>Label your graph</h2>
+   <form method="post" action="/graph_page">
+   <h2>Label your graph!</h2>
     <div class="row">
       <div class="col">
-      <input type="text" id="form_title" name="form_title" class="form-control" placeholder="Form Title">
+      <input type="form_title" id="form_title" name="form_title" class="form-control" placeholder="Form Title">
       </div>
-      <div class="col"> 
-        <input type="text" id="x_axis" name="x_axis" class="form-control" placeholder="X axis label"> <div class="tooltip" role="tooltip">?
-        <span class="tooltiptext">This axis will display a measure of time, so fill it in with 'days', 'weeks', 'months' or 'years', to label it correctly . An easy way to remember which is the X axis is to think, 'it's a-cross'!</span>
-      </div></div>
-      <div class="col"> 
-        <input type="text" id="y_axis" name="y_axis" class="form-control" placeholder="Y axis label"> <div class="tooltip" role="tooltip">?
-         <span class="tooltiptext">The Y axis goes up the side of the graph. Tell us, what is it you are measuring? Is it the number of chocolates eaten? Goals scored? Pounds spent?</span>
-      </div> </div></div>
-<div>
-       <h2>Enter your values</h2>
-          </div>
+      <div class="col">
+        <input type="x_axis" id="x_axis" name="x_axis" class="form-control" placeholder="X Axis (a measure of time e.g. days)">
+      </div>
+      <div class="col">
+        <input type="y_axis" id="y_axis" name="y_axis" class="form-control" placeholder="Y Axis (what you are measuring)">
+      </div> 
+       </div>
+
+    <h2>What are your values?</h2>
     <div class="row">
       <div class="col">
-        <input type="number" id="value_1" name="value_1" class="form-control" placeholder="Value 1">
+        <input type="value_1" id="value_1" name="value_1" class="form-control" placeholder="Value 1">
       </div>
       <div class="col">
-        <input type="number" id="value_2" name ="value_2" class="form-control" placeholder="Value 2">
+        <input type="value_2" id="value_2" name="value_2" class="form-control" placeholder="Value 2">
       </div>
       <div class="col">
-        <input type="number" id="value_3" name="value_3" class="form-control" placeholder="Value 3">
+        <input type="value_3" id="value_3" name="value_3" class="form-control" placeholder="Value 3">
       </div>
       <div class="col">
-         <input type="number" id="value_4" name="value_4" class="form-control" placeholder="Value 4">
+         <input type="value_4" id="value_4" name="value_4" class="form-control" placeholder="Value 4">
         </div>
     
     </div>
     <div class="row">
 
       <div class="col">
-        <input type="number" id="value_5" name="value_5" class="form-control" placeholder="Value 5">
+        <input type="value_5" id="value_5" name="value_5" class="form-control" placeholder="Value 5">
       </div>
       <div class="col">
-        <input type="number" id="value_6" name="value_6" class="form-control" placeholder="Value 6">
+        <input type="value_6" id="value_6" name="value_6" class="form-control" placeholder="Value 6">
       </div>
       <div class="col">
-          <input type="number" id="value_7" name="value_7" class="form-control" placeholder="Value 7">
+          <input type="value_7" id="value_7" name="value_7" class="form-control" placeholder="Value 7">
         </div>
         <div class="col">
-          <input type="number" id="value_8" name="value_8" class="form-control" placeholder="Value 8">
+          <input type="value_8" id="value_8" name="value_8" class="form-control" placeholder="Value 8">
         </div>
     </div>
     <div class="row">
       <div class="col">
-            <input type="number" id="value_9" name="value_9" class="form-control" placeholder="Value 9"> <div class="tooltip" role="tooltip">?
-          <span class="tooltiptext">By this we do not mean moral values; we mean the numbers you want to show on your graph! Please fill 12 numbers in, and order them from first to last.</span>
-             </div>
+            <input type="value_9" id="value_9" name="value_9" class="form-control" placeholder="Value 9">
         </div>
       <div class="col">
-        <input type="number" id="value_10" name="value_10" class="form-control" placeholder="Value 10">
+        <input type="value_10" id="value_10" name="value_10" class="form-control" placeholder="Value 10">
       </div>
       <div class="col">
-        <input type="number" id="value_eleven" name="value_11" class="form-control" placeholder="Value 11">
+        <input type="value_11" id="value_11" name="value_11" class="form-control" placeholder="Value 11">
       </div>
       <div class="col">
-        <input type="number" id="value_12" name="value_12" class="form-control" placeholder="Value 12"> 
+        <input type="value_12" id="value_12" name="value_12" class="form-control" placeholder="Value 12">
       </div>
     </div>
     <div style="text-align:center;padding:50px">
-    <button type="submit" class="btn btn-primary">Submit</button></div>
+    <button type="submit" id="submit-button" class="btn btn-primary">Submit</button></div>
   </form>
 
   </div>
@@ -118,7 +113,7 @@
         <div class="pr-xl-4">
           <p style="color: aliceblue;">Just two women, trying to encourage children to get excited about maths and software.</p>
           <!-- Rights-->
-          <p class="rights" style="color: aliceblue;"><span>©&nbsp; </span><span class="copyright-year">2019</span><span>&nbsp;</span><span>Waves</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+          <p class="rights" style="color: aliceblue;"><span>Â©&nbsp; </span><span class="copyright-year">2019</span><span>&nbsp;</span><span>Waves</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
         </div>
       </div>
       <div class="col-md-4">
@@ -163,29 +158,31 @@ if (shareButtons) {
 
     event.preventDefault();
 
+    window.open(this.href, 'Share Dialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width='+width+',height='+height+',top='+(screen.height/2-height/2)+',left='+(screen.width/2-width/2));
+  });
 });
 }
 
 })();</script>
-<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi";" title="Share on Twitter">
+<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi" title="Share on Twitter">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Twitter</span>
 </a>
 
 <!-- Medium Facebook button -->
-<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq"; title="Share on Facebook">
+<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share on Facebook">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Facebook</span>
 </a>
 
 <!-- Medium Email button -->
-<a class="share-btn share-btn-email" href="mailto:?subject=Graph Generator Demo&amp;body=" title="Share via Email">
+<a class="share-btn share-btn-email" href="mailto:?subject=Share Buttons Demo&amp;body=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share via Email">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text">Email</span>
 </a>
 
 <!-- Medium More/share button -->
-<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq";" title="More share options">
+<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="More share options">
 <span class="share-btn-icon"></span>
 <span class="share-btn-text-sr">More</span>
 </a>
