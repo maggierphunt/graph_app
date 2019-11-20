@@ -40,7 +40,7 @@
    <p class="instructions">Make your graph here...</p>
 
    <form method="post" action="/graph_page" onsubmit="return validateForm()">
-   <div><h2>Label your graph!</h2>
+   <div><h2>Label your graph</h2>
     <div class="row">
       <div class="col">
       <input type="form_title" id="form_title" name="form_title" class="form-control" placeholder="Form Title">
@@ -58,7 +58,10 @@
        </div></div>
 
 <br><div>
-    <h2>What are your values?</h2>
+    <h2>Input your values</h2>
+    <div class="tooltip" role="tooltip">?
+      <span class="tooltiptext">By this we do not mean moral values; we mean the numbers you want to show on your graph! Please fill 12 numbers in, and order them from first to last.</span>
+         </div>
     <div class="row">
       <div class="col">
         <input type="number" id="value_1" name="value_1" class="form-control" placeholder="Value 1">
@@ -91,9 +94,7 @@
     </div>
     <div class="row">
       <div class="col">
-            <input type="number"  id="value_9" name="value_9" class="form-control" placeholder="Value 9">  <div class="tooltip" role="tooltip">?
-              <span class="tooltiptext">By this we do not mean moral values; we mean the numbers you want to show on your graph! Please fill 12 numbers in, and order them from first to last.</span>
-                 </div>
+            <input type="number"  id="value_9" name="value_9" class="form-control" placeholder="Value 9">
     
         </div>
       <div class="col">
