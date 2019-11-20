@@ -4,15 +4,6 @@ app = Flask("our_app") #making an app
 
 def our_landing_page():
         return render_template("our_landing_page.html")
-
-@app.route("/about")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
-
-def about():
-        return render_template("about.html")
-
-@app.route("/graph_page", methods=["GET"]) 
-def graph_page():
-       return render_template("graph_page.html")
 form_data = request.form.get
 import matplotlib.pyplot as plt
 x_value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -22,5 +13,16 @@ plt.xlabel("x_axis")
 plt.ylabel("y_axis")
 plt.title("form_title")
 plt.show()
+s.plot.bar()
+fig.savefig('my_graph.png')
+
+@app.route("/about")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
+
+def about():
+        return render_template("about.html")
+
+@app.route("/graph_page", methods=["GET"]) 
+def graph_page():
+       return render_template("graph_page.html")
 
 app.run(debug=True) #runs the app. the debug part - unlocks debugging feature.
