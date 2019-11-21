@@ -58,6 +58,7 @@ text-align: right;
 /* unvisited link */
 a:link {
 	text-decoration: none;
+	color: white;
   }
   
   /* visited link */
