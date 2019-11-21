@@ -1,5 +1,10 @@
-function validateForm() {
+function validateForm(form) {
     var x = document.forms["Form"]["value_1"].value;
+    if(form.inputfield.value == "") {
+        alert("Error: Input is empty!");
+        form.inputfield.focus();
+        return false;
+     }
     if (x == "number") {
        alert("Please only enter numerical values.");
        return false;}
@@ -49,3 +54,5 @@ function validateForm() {
         if (x == "number") {
             alert("Please only enter numerical values.");
             return false;}
+
+            return true;}

@@ -114,7 +114,6 @@
 
   </div>
 </div>
-
 </body>
 
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246; font-size: small;padding:50px">
@@ -124,7 +123,7 @@
         <div class="pr-xl-4">
           <p style="color: aliceblue;">Just two women, trying to encourage children to get excited about maths and software.</p>
           <!-- Rights-->
-          <p class="rights" style="color: aliceblue;"><span>Â©&nbsp; </span><span class="copyright-year">2019</span><span>&nbsp;</span><span>Waves</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+          <p class="rights" style="color: aliceblue;"><span>©&nbsp; </span><span class="copyright-year">2019</span><span>&nbsp;</span><span>Waves</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
         </div>
       </div>
       <div class="col-md-4">
@@ -161,7 +160,7 @@
 
 var shareButtons = document.querySelectorAll(".share-btn");
 
-if (shareButtons) {
+if (shareButtons) 
   [].forEach.call(shareButtons, function(button) {
   button.addEventListener("click", function(event) {
      var width = 650,
@@ -169,35 +168,40 @@ if (shareButtons) {
 
     event.preventDefault();
 
-    window.open(this.href, 'Share Dialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width='+width+',height='+height+',top='+(screen.height/2-height/2)+',left='+(screen.width/2-width/2));
-  });
 });
 }
 
-})();</script>
-<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq&amp;text=Share Buttons Demo&amp;via=sunnyismoi" title="Share on Twitter">
+  );</script>
+<a class="share-btn share-btn-twitter" href="https://twitter.com/share?url=https://github.com/maggierphunt/our_app/tree/19th-nov&amp;text=Share graph&amp;via=sunnyismoi";" title="Share on Twitter">
 <span class="share-btn-icon"></span>
-<span class="share-btn-text">Twitter</span>
+<span class="share-btn-text" style="color: aliceblue;">Twitter</span>
 </a>
 
 <!-- Medium Facebook button -->
-<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share on Facebook">
+<a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/maggierphunt/our_app/tree/19th-nov"; title="Share on Facebook">
 <span class="share-btn-icon"></span>
-<span class="share-btn-text">Facebook</span>
+<span class="share-btn-text" style="color: aliceblue;">Facebook</span>
 </a>
 
 <!-- Medium Email button -->
-<a class="share-btn share-btn-email" href="mailto:?subject=Share Buttons Demo&amp;body=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="Share via Email">
+<a class="share-btn share-btn-email" href="mailto:?subject=Graph Generator Demo&amp;body=" title="Share via Email">
 <span class="share-btn-icon"></span>
-<span class="share-btn-text">Email</span>
+<span class="share-btn-text" style="color: aliceblue;">Email</span>
 </a>
 
 <!-- Medium More/share button -->
-<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcodepen.io%2Fsunnysingh%2Fpen%2FOPxbgq" title="More share options">
+<a class="share-btn share-btn-more" href="https://www.addtoany.com/share_save?linkurl=https://github.com/maggierphunt/our_app/tree/19th-nov";" title="More share options">
 <span class="share-btn-icon"></span>
-<span class="share-btn-text-sr">More</span>
+<span class="share-btn-text-sr" style="color: aliceblue;">More</span>
 </a>
 
 </div>
 </footer>
+<!-- Bootstrap core JavaScript
+          ================================================== -->
+          <!-- Placed at the end of the document so the pages load faster -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+          <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+          <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
 </html>
