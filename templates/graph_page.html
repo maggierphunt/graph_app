@@ -45,7 +45,11 @@
    <div class="child two container">
    <p>Can you see how all your data points are plotted onto it? What will you plot next?</p>
    <form method="get" action="/">
-<button type="submit" class="btn btn-primary">Plot again!</button></form>
+    <button type="submit" class="btn btn-primary"><a href="data:image/png;base64, {{ plot_url }}" download="Graph">Download your graph
+    </a></button></form>
+    <br>
+       <form method="get" action="/">
+<button type="submit" class="btn btn-primary">Plot again</button></form>
   </div></div>
 
 </div>
