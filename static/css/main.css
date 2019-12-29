@@ -98,6 +98,8 @@ a:link {
 }
 .three{	
 	align-self: center;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 /* banner CSS */

@@ -42,22 +42,25 @@
   <div class="child two container">
    <p class="instructions">Here is your graph!</p>
    <div class="graphplot">   <img src="data:image/png;base64, {{ plot_url }}"></div>
-   <div class="child three container">
-   <p>Can you see how all your data points are plotted onto it? What will you plot next?</p>
-   <form methods="post" action="/">
-<button type="submit" class="btn btn-primary"><a href="data:image/png;base64, {{ plot_url }}" download="Graph">Download your graph
-    </a></button></form>
+   <div class="child two container">
+   <p>Check your inbox to find your graph! What will you plot next?</p>
     <br>
-       <form methods="get" action="/">
+       <form method="get" action="/">
 <button type="submit" class="btn btn-primary">Plot again</button></form>
-  <div id="contact-form" class="col" width=200px >
-      <form methods="post" action="/thank_you">
-      <p>Enter your email address to send yourself your graph!</p>
-      <input type="email" id="email_address" name="email_address" class="form-control" required>
-      <input type="submit" class="btn btn-primary" value="Submit" id="submit-button" methods="post">
+  </div></div>
+
+  <div class="boxed"><p>Enter your email address to send yourself your graph!</p></div>
+  <div id="contact-form">
+      <form method="post" action="/thank_you">
+      <label for="emailaddress">Email address:</label>
+      <input type="email" id="emailaddress" name="emailaddress" required="required">
+      
+      <input type="submit" value="Submit" id="submit-
+      button">
+      
       </form>
 </div>
-</div>
+
 </div>
 </body>
 
