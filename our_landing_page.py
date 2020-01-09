@@ -34,19 +34,19 @@ def graph_page():
     plot_url = base64.b64encode(img.getvalue()).decode()
     return render_template('graph_page.html', plot_url=plot_url)
 
-@app.route("/thank_you", methods=['POST'])
+@app.route("/thank_you", methods=['GET', 'POST'])
 def send_simple_message():
     form_data = request.form
-    #email_address = form_data["email_address"]
-    return request.post(
+    email_address = form_data["email_address"]
+    return request.form(
 		"https://api.mailgun.net/v3/sandbox739f698ff783463b95d9f9ef8337ec54.mailgun.org/messages",
 		auth=("api", "dcc9f76372aa327175f9b28e77dabc81-816b23ef-47c928a6"),
-		    files=[("attachment", open("data:image/png;base64, {{ plot_url }}"))],
+		    files=[("Your Graph", open(href="data:image/png;base64, {{ plot_url }}"))],
             data ={
             "from": "Graph Generator <mailgun@sandbox739f698ff783463b95d9f9ef8337ec54.mailgun.org>",
 			"to": [int(form_data["email_address"])],
 			"subject": "Your graph",
 			"text": "Please find attached your graph!"})
-    return render_template('thank_you.html', form=form)
+    return render_template('thank_you.html'))
 
 app.run(debug=True) #runs the app. the debug part - unlocks debugging feature.

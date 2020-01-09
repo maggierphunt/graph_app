@@ -48,13 +48,13 @@
 <button type="submit" class="btn btn-primary"><a href="data:image/png;base64, {{ plot_url }}" download="Graph">Download your graph
     </a></button></form>
     <br>
-       <form methods="get" action="/">
+       <form action="/">
 <button type="submit" class="btn btn-primary">Plot again</button></form>
   <div id="contact-form" class="col" width=200px >
-      <form methods="post" action="/thank_you">
+      <form method="post" action="/thank_you">
       <p>Enter your email address to send yourself your graph!</p>
       <input type="email" id="email_address" name="email_address" class="form-control" required>
-      <input type="submit" class="btn btn-primary" value="Submit" id="submit-button" methods="post">
+      <input type="submit" class="btn btn-primary" value="Submit" id="submit-button">
       </form>
 </div>
 </div>
